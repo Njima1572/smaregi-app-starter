@@ -30,8 +30,7 @@ echo "PROJECT ID is ${PROJECT_ID}"
 
 # デプロイログと通知
 function log_and_notify() {
-    echo `date`" [${DEPLOY_ENV}] ${CLOUD_FUNC_NAME}/${CLOUD_FUNC_ENTRYPOINT} in ${PROJECT_ID}" >> ${SCRIPT_DIR}/deploy-log.txt &&\
-    osascript -e "display notification \"${CLOUD_FUNC_NAME}のデプロイが完了しました\" with title \"デプロイ通知\" sound name \"Glass\" "
+    echo `date`" [${DEPLOY_ENV}] ${CLOUD_FUNC_NAME}/${CLOUD_FUNC_ENTRYPOINT} in ${PROJECT_ID}" >> ${SCRIPT_DIR}/deploy-log.txt
 }
 
 ##################　共通モジュール　ここまで　##################
